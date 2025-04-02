@@ -1,7 +1,7 @@
 import { Link } from "@heroui/link";
 import { Snippet } from "@heroui/snippet";
 import { Code } from "@heroui/code";
-import { button as buttonStyles } from "@heroui/theme";
+import { button as buttonStyles } from "@/components/button";
 
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
@@ -28,7 +28,7 @@ export default function IndexPage() {
           <Link
             isExternal
             className={buttonStyles({
-              color: "success",
+              color: "customGreen",
               radius: "full",
               variant: "shadow",
             })}

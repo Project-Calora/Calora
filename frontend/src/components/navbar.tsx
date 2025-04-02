@@ -1,4 +1,4 @@
-import { Button } from "@heroui/button";
+import { button as buttonStyles } from "@/components/button";
 import { Kbd } from "@heroui/kbd";
 import { Link } from "@heroui/link";
 import { Input } from "@heroui/input";
@@ -86,14 +86,18 @@ export const Navbar = () => {
           <ThemeSwitch />
         </NavbarItem>
         <NavbarItem className="hidden md:flex">
-          <Button
-            isExternal
-            as={Link}
-            className="text-sm font-normal text-default-600 bg-default-100 color-green"
-            variant="flat"
-          >
-            Log In
-          </Button>
+            <Link
+                isExternal
+                className={buttonStyles({
+                color: "customGreen",
+                radius: "full",
+                variant: "shadow",
+                size: "sm",
+                })}
+                href={siteConfig.links.docs}
+            >
+                Log In
+            </Link>
         </NavbarItem>
       </NavbarContent>
 
