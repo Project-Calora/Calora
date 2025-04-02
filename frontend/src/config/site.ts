@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Vite + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Calora",
+  description: "Calorie tracking made simple.",
   navItems: [
     {
       label: "Home",
@@ -56,7 +56,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/frontio-ai/heroui",
+    github: "https://github.com/Project-Calora/Calora",
     twitter: "https://twitter.com/hero_ui",
     docs: "https://heroui.com",
     discord: "https://discord.gg/9b6yyZKmH4",
