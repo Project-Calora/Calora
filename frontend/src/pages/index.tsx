@@ -1,6 +1,4 @@
 import { Link } from "@heroui/link";
-import { Snippet } from "@heroui/snippet";
-import { Code } from "@heroui/code";
 import { button as buttonStyles } from "@heroui/theme";
 
 import { siteConfig } from "@/config/site";
@@ -20,7 +18,7 @@ export default function IndexPage() {
             websites regardless of your design experience.
           </span> */}
           <div className={subtitle({ class: "mt-4" })}>
-            Calorie tracking made simple. 
+            Calorie tracking made simple.
           </div>
         </div>
 
@@ -44,15 +42,6 @@ export default function IndexPage() {
             <GithubIcon size={20} />
             GitHub
           </Link>
-        </div>
-
-        <div className="mt-8">
-          <Snippet hideCopyButton hideSymbol variant="bordered">
-            <span>
-              Get started by editing{" "}
-              <Code color="primary">pages/index.tsx</Code>
-            </span>
-          </Snippet>
         </div>
       </section>
     </DefaultLayout>
