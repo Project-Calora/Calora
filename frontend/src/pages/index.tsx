@@ -20,7 +20,7 @@ export default function IndexPage() {
             websites regardless of your design experience.
           </span> */}
           <div className={subtitle({ class: "mt-4" })}>
-            Calorie tracking made simple.
+            Calorie tracking made simple. 
           </div>
         </div>
 
