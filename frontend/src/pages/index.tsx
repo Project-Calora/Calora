@@ -9,16 +9,16 @@ import DefaultLayout from "@/layouts/default";
 export default function IndexPage() {
   return (
     <DefaultLayout>
-      <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div className="inline-block max-w-lg text-center justify-center">
+      <section className="flex flex-col items-center justify-center gap-4 py-16 md:py-24">
+        <div className="inline-block max-w-2xl text-center justify-center">
           {/* <span className={title()}>Make&nbsp;</span> */}
           <span className={title({ color: "green" })}>Calora&nbsp;</span>
           <br />
           {/* <span className={title()}>
             websites regardless of your design experience.
           </span> */}
-          <div className={subtitle({ class: "mt-4" })}>
-            Calorie tracking made simple.
+          <div className={subtitle({ class: "mt-4 text-lg md:text-xl" })}>
+            Your personal AI nutrition companion. Log meals with ease, track macronutrients and minerals, and visualize your health journey.
           </div>
         </div>
 
