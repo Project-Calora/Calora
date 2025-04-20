@@ -13,6 +13,7 @@ import {
 } from "@heroui/navbar";
 import { link as linkStyles } from "@heroui/theme";
 import clsx from "clsx";
+import { Link as Linkuh } from "react-router-dom";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
@@ -86,17 +87,17 @@ export const Navbar = () => {
           <ThemeSwitch />
         </NavbarItem>
         <NavbarItem className="hidden md:flex">
-          <Link
-            className={buttonStyles({
-              color: "customGreen",
-              radius: "full",
-              variant: "shadow",
-              size: "sm",
-            })}
-            href={"#contact"} // Change to anchor if you have a contact section
-          >
-            Log In
-          </Link>
+            <Linkuh
+                className={buttonStyles({
+                    color: "customGreen",
+                    radius: "full",
+                    variant: "shadow",
+                    size: "sm",
+                })}
+                to="/login"
+                >
+                Log In
+            </Linkuh>
         </NavbarItem>
       </NavbarContent>
 

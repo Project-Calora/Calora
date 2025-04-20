@@ -1,4 +1,5 @@
 import { Link } from "@heroui/link";
+import { Link as RouterLink } from "react-router-dom";
 import { button as buttonStyles } from "@/components/button";
 
 import { siteConfig } from "@/config/site";
@@ -23,8 +24,8 @@ export default function IndexPage() {
         </div>
 
         <div className="flex gap-3">
-          <Link
-            isExternal
+          <RouterLink
+            to="/signup"
             className={buttonStyles({
               color: "customGreen",
               radius: "full",
@@ -33,7 +34,7 @@ export default function IndexPage() {
             href={"#contact"}
           >
             Sign Up
-          </Link>
+          </RouterLink>
           <Link
             isExternal
             className={buttonStyles({ variant: "bordered", radius: "full" })}
