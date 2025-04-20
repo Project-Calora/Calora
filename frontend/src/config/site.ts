@@ -4,62 +4,35 @@ export const siteConfig = {
   name: "Calora",
   description: "Calorie tracking made simple.",
   navItems: [
-    {
-      label: "Home",
-      href: "/",
-    },
+
     {
       label: "About",
-      href: "/about",
+      href: "#about",
     },
     {
       label: "Features",
-      href: "/pricing",
+      href: "#features",
     },
     {
       label: "Contact",
-      href: "/blog",
+      href: "#contact",
     },
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "About",
+      href: "#about",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Features",
+      href: "#features",
     },
     {
-      label: "Projects",
-      href: "/projects",
-    },
-    {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "Contact",
+      href: "#contact",
     },
   ],
   links: {
-    github: "https://github.com/Project-Calora/Calora",
-    twitter: "https://twitter.com/hero_ui",
-    docs: "https://heroui.com",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    github: "https://github.com/Project-Calora/Calora.git",
   },
 };

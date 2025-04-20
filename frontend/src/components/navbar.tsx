@@ -52,7 +52,7 @@ export const Navbar = () => {
           <Link
             className="flex justify-start items-center gap-1"
             color="foreground"
-            href="/"
+            href="#home"
           >
             <Logo />
             <p className="font-bold text-inherit">Calora</p>
@@ -81,7 +81,7 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal href={siteConfig.links.github} title="GitHub">
+          <Link href={siteConfig.links.github} title="GitHub">
             <GithubIcon className="text-default-500" />
           </Link>
           <ThemeSwitch />
@@ -98,12 +98,11 @@ export const Navbar = () => {
                 >
                 Log In
             </Linkuh>
-
         </NavbarItem>
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal href={siteConfig.links.github}>
+        <Link href={siteConfig.links.github}>
           <GithubIcon className="text-default-500" />
         </Link>
         <ThemeSwitch />
@@ -114,16 +113,16 @@ export const Navbar = () => {
         {searchInput}
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navMenuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
+            <NavbarMenuItem key={`menu-${item.label}-${index}`}>
               <Link
                 color={
                   index === 2
                     ? "primary"
                     : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
-                      : "foreground"
+                    ? "danger"
+                    : "foreground"
                 }
-                href="#"
+                href={item.href}
                 size="lg"
               >
                 {item.label}
