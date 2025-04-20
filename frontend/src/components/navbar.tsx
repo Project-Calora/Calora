@@ -13,6 +13,7 @@ import {
 } from "@heroui/navbar";
 import { link as linkStyles } from "@heroui/theme";
 import clsx from "clsx";
+import { Link as Linkuh } from "react-router-dom";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
@@ -86,18 +87,18 @@ export const Navbar = () => {
           <ThemeSwitch />
         </NavbarItem>
         <NavbarItem className="hidden md:flex">
-            <Link
-                isExternal
+            <Linkuh
                 className={buttonStyles({
-                color: "customGreen",
-                radius: "full",
-                variant: "shadow",
-                size: "sm",
+                    color: "customGreen",
+                    radius: "full",
+                    variant: "shadow",
+                    size: "sm",
                 })}
-                href={siteConfig.links.docs}
-            >
+                to="/login"
+                >
                 Log In
-            </Link>
+            </Linkuh>
+
         </NavbarItem>
       </NavbarContent>
 
